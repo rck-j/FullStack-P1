@@ -1,7 +1,7 @@
 import media
 import fresh_tomatoes
 
-pulp_fiction = media.Movie("Pulp Fiction", "Stuff", "https://en.wikipedia.org/wiki/Pulp_Fiction#/media/File:Pulp_Fiction_(1994)_poster.jpg", "https://www.youtube.com/watch?v=s7EdQ4FqbhY")
+pulp_fiction = media.Movie("Pulp Fiction", "Stuff", "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg", "https://www.youtube.com/watch?v=s7EdQ4FqbhY")
 lost_translation = media.Movie("Lost in Translation", "Stuff", "https://en.wikipedia.org/wiki/Pulp_Fiction#/media/File:Pulp_Fiction_(1994)_poster.jpg", "https://www.youtube.com/watch?v=s7EdQ4FqbhY")
 wall_e = media.Movie("WALL-E", "Stuff", "https://en.wikipedia.org/wiki/Pulp_Fiction#/media/File:Pulp_Fiction_(1994)_poster.jpg", "https://www.youtube.com/watch?v=s7EdQ4FqbhY")
 matrix = media.Movie("The Matrix", "Stuff", "https://en.wikipedia.org/wiki/Pulp_Fiction#/media/File:Pulp_Fiction_(1994)_poster.jpg", "https://www.youtube.com/watch?v=s7EdQ4FqbhY")

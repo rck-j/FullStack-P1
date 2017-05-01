@@ -16,7 +16,6 @@ class Movie():
         omdb_query_string = movie_query.replace(" ", "+")
         website = "http://www.omdbapi.com/?t="+omdb_query_string
         print(website)
-        proxy = "http://10.32.1.8:10149"
         connection = urllib.urlopen(website, proxies = {'http': proxy})
         output = connection.read()
         print(output)

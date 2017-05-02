@@ -11,6 +11,9 @@ main_page_head = '''
     <meta charset="utf-8">
     <title>Fresh Tomatoes!</title>
 
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -19,6 +22,10 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            font-family: 'Oleo Script', cursive;
+        }
+        h2 {
+            font-size: 40px;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -55,6 +62,9 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        .plot {
+            font-size: 16px;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -123,8 +133,10 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
+    <!--<img src="{poster_image_url}" width="220" height="342">-->
+    <img src="{poster_image_url}" width="308" height="479">
     <h2>{movie_title}</h2>
+    <p class="plot">{movie_plot}</p>
 </div>
 '''
 
@@ -144,6 +156,7 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            movie_plot=movie.plot,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )

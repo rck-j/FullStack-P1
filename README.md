@@ -1,6 +1,7 @@
 # Movie Trailer Website
-Source code for a Movie Trailer website.
+### Source code for to generate static html files from python code.
+
 
 ```python
-# python entertainment.py
+# python entertainment_center.py
 ```

@@ -13,7 +13,7 @@ class Movie():
         connection = urllib.urlopen(website)
         output = connection.read()
 
-        # Convert string return to dictionary
+        # Convert string return from omdb to a dictionary
         dict_output = ast.literal_eval(output)
 
         self.title = dict_output["Title"]

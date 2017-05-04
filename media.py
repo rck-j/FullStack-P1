@@ -10,8 +10,7 @@ class Movie():
 
         # Connect to omdbapi.com to get Title and Poster information
         website = "http://www.omdbapi.com/?t="+omdb_query_string
-        proxy = "http://10.32.1.8:10149"
-        connection = urllib.urlopen(website, proxies = {'http': proxy})
+        connection = urllib.urlopen(website)
         output = connection.read()
 
         # Convert string return to dictionary
